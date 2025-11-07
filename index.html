@@ -66,6 +66,23 @@
             color: #594a26;
         }
 
+        /* --- QR Code Styling --- */
+        .qr-code-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .qr-code-container img {
+            width: 100%;
+            max-width: 400px; /* Doubled from 200px */
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
         /* --- Padlet Embed Container (from your code) --- */
         /* The inline styles from Padlet will handle most of this */
         .padlet-embed {
@@ -103,32 +120,38 @@
                 padding: 15px;
                 margin: 15px auto;
             }
+            .qr-code-container img {
+                max-width: 250px; /* Adjust for smaller screens if 400px is too big */
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section with Logo and Title -->
-    <header>
+    <!-- Header Section with Logo and Title --><header>
         <img src="pdhub-logo.png" alt="Panagiotis Domvros EFL Hub Logo">
         <h1>Our Modern 'Anti-Comparisons' Insta Feed</h1>
     </header>
 
-    <!-- Main Activity Section -->
-    <main>
+    <!-- Main Activity Section --><main>
         
-        <!-- Instructions -->
-        <p class="instructions">
+        <!-- QR Code -->
+        <div class="qr-code-container">
+            <!-- Wrapped image in an anchor (<a>) tag -->
+            <a href="https://padlet.com/domvros/anti_comparison" target="_blank" rel="noopener noreferrer" title="Open Padlet in new tab">
+                <img src="padlet qr code.png" alt="Padlet QR Code">
+            </a>
+        </div>
+
+        <!-- Instructions --><p class="instructions">
             Create your own 'anti-comparison' post inspired by Sonnet 130. Your post must include your text and a relevant image. Then, 'Like' 3 posts and 'Comment' on 2 others.
         </p>
 
-        <!-- Padlet Embed Code -->
-        <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/pxg18c0pufuz9b0u" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>
+        <!-- Padlet Embed Code --><div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/pxg18c0pufuz9b0u" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Made with Padlet"></div></a></div></div>
 
     </main>
 
-    <!-- Footer Section -->
-    <footer>
+    <!-- Footer Section --><footer>
         <p>✨✍️ Created by Panagiotis Domvros, English and Drama Teacher, All Rights Reserved ✍️✨</p>
     </footer>
 
